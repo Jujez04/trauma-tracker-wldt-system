@@ -1,0 +1,27 @@
+# Temporary files for Anylogic
+simulation/**/cache/
+simulation/**/debug.log
+~*.alp
+*.alp.bak
+
+# cache files
+*/.metadata/
+*/.config/
+*/.recommenders/
+
+*.class
+*.jar
+
+database/*.lck
+database/*.log
+database/*.data
+database/*.backup
+database/*.properties
+database/*.script
+
+Exported_*/
+exported_model*/
+
+*.log
+
+!org.eclipse.paho.client.mqttv3-1.2.5.jar
