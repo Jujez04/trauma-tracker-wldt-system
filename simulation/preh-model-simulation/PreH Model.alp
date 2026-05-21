@@ -11,6 +11,28 @@
 	<EngineVersion>6</EngineVersion>
 	<JavaPackageName><![CDATA[preh_model]]></JavaPackageName>
 	<ModelTimeUnit><![CDATA[Second]]></ModelTimeUnit>
+	<OptionLists>
+		<OptionList>
+			<Id>1779342563426</Id>
+			<Name><![CDATA[SeverityCode]]></Name>
+			<Option>
+				<Id>1779342563431</Id>
+				<Name><![CDATA[WHITE]]></Name>
+			</Option>
+			<Option>
+				<Id>1779342563432</Id>
+				<Name><![CDATA[GREEN]]></Name>
+			</Option>
+			<Option>
+				<Id>1779342563433</Id>
+				<Name><![CDATA[YELLOW]]></Name>
+			</Option>
+			<Option>
+				<Id>1779342563434</Id>
+				<Name><![CDATA[RED]]></Name>
+			</Option>
+		</OptionList>
+	</OptionLists>
 	<Folders>
 	</Folders>
 	<ActiveObjectClasses>
@@ -5943,6 +5965,21 @@ traceln("Helicopter moving to " + bestHospital);]]></Action>
 						<Type><![CDATA[boolean]]></Type>        
 						<InitialValue Class="CodeValue">
 							<Code><![CDATA[false]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1779342309658</Id>
+					<Name><![CDATA[severityCode]]></Name>
+					<X>50</X><Y>260</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[SeverityCode]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[SeverityCode.WHITE]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
