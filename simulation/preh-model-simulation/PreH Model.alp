@@ -690,6 +690,7 @@ for(MedHelicopter h: medHelicopters) {
 					<Action><![CDATA[if(!signalOnlyUrbanEvent) {
 	Point position = OperativeZone.randomPointInside();
 	Patient p = add_patients();
+	p.severityCode = SeverityCode.random(new Random());
 	p.setLocation(position);
 	traceln("New call from position: " + position);
 	operator.handleSignals(p);
@@ -729,6 +730,7 @@ for(MedHelicopter h: medHelicopters) {
 					<Action><![CDATA[GISRegion region = urbanRegionCollection.get(uniform_discr(0, urbanRegionCollection.size() - 1));
 Point position = region.randomPointInside();
 Patient p = add_patients();
+p.severityCode = SeverityCode.random(new Random());
 p.setLocation(position);
 traceln("New call from position: " + position);
 operator.handleSignals(p);]]></Action>
@@ -3173,8 +3175,8 @@ operator.handleSignals(p);]]></Action>
 					<Height>600</Height>
 					<GISShapes>
 					</GISShapes>
-					<Latitude>44.25185978206328</Latitude>
-					<Longitude>11.787864867670647</Longitude>
+					<Latitude>44.190472421723676</Latitude>
+					<Longitude>11.952592609257369</Longitude>
 					<Scale>800000</Scale>
 					<BorderColor>-4144960</BorderColor>
 					<FillColor>-1</FillColor>
@@ -3353,11 +3355,9 @@ operator.handleSignals(p);]]></Action>
 					<LineStyle>DASHED</LineStyle>
 					<ReadOnly>false</ReadOnly>
 					<Points>
-						<Point><X>43.97020257838065</X><Y>12.75483977266753</Y></Point>
-						<Point><X>43.976525159964055</X><Y>12.713108744798898</Y></Point>
-						<Point><X>43.994238106401106</X><Y>12.685287876522288</Y></Point>
-						<Point><X>44.01181413243159</X><Y>12.655270638357912</Y></Point>
-						<Point><X>44.02583148597805</X><Y>12.638615016406055</Y></Point>
+						<Point><X>43.88352545827859</X><Y>12.509592012809229</Y></Point>
+						<Point><X>43.83791661651403</X><Y>12.685301603835052</Y></Point>
+						<Point><X>43.95819783222303</X><Y>12.748557056604348</Y></Point>
 						<Point><X>44.07443935737171</X><Y>12.576933445692243</Y></Point>
 						<Point><X>44.08863883321524</X><Y>12.539595340630202</Y></Point>
 						<Point><X>44.1522336896999</X><Y>12.464186641148162</Y></Point>
@@ -3375,13 +3375,12 @@ operator.handleSignals(p);]]></Action>
 						<Point><X>44.520071607210596</X><Y>11.643613699516616</Y></Point>
 						<Point><X>44.309925303426695</X><Y>11.595623017467686</Y></Point>
 						<Point><X>44.12018216117478</X><Y>11.762812523636903</Y></Point>
-						<Point><X>43.98857914036696</X><Y>11.684095542012086</Y></Point>
-						<Point><X>43.77334018688112</X><Y>12.055662208074912</Y></Point>
-						<Point><X>43.88285596279598</X><Y>12.398945303938866</Y></Point>
-						<Point><X>43.95049301269878</X><Y>12.367647033037393</Y></Point>
-						<Point><X>43.97752630536619</X><Y>12.513705630577613</Y></Point>
-						<Point><X>43.876840059979735</X><Y>12.530398041725066</Y></Point>
-						<Point><X>43.85126569650178</X><Y>12.684802844839009</Y></Point>
+						<Point><X>43.986965956401164</X><Y>11.660475414176926</Y></Point>
+						<Point><X>43.7653140319112</X><Y>12.02507281555552</Y></Point>
+						<Point><X>43.82270591608475</X><Y>12.369024339988568</Y></Point>
+						<Point><X>43.8911235397846</X><Y>12.44809365595019</Y></Point>
+						<Point><X>43.953138260012935</X><Y>12.404166258193735</Y></Point>
+						<Point><X>43.99613089200611</X><Y>12.514863300540004</Y></Point>
 					</Points>
 				</GISRegion>
 				<GISPoint>
@@ -5965,6 +5964,22 @@ traceln("Helicopter moving to " + bestHospital);]]></Action>
 						<Type><![CDATA[SeverityCode]]></Type>        
 						<InitialValue Class="CodeValue">
 							<Code><![CDATA[SeverityCode.WHITE]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1779454792263</Id>
+					<Name><![CDATA[gcsScore]]></Name>
+					<ExcludeFromBuild>true</ExcludeFromBuild>
+					<X>50</X><Y>110</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[9]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
