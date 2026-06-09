@@ -25,3 +25,27 @@ exported_model*/
 *.log
 
 !org.eclipse.paho.client.mqttv3-1.2.5.jar
+
+# LaTeX build files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.dvi
+*.fls
+*.fdb_latexmk
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.lof
+*.lot
+*.lol
+*.ilg
+*.ind
+*.idx
+*.gz
+report/*/*.pdf
