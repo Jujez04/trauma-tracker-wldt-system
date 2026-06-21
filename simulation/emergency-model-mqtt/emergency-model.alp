@@ -7,7 +7,7 @@
 <AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.9.9.202606170507" AlpVersion="8.9.9">
 <Model>
 	<Id>1776332817039</Id>
-	<Name><![CDATA[PreH Model]]></Name>
+	<Name><![CDATA[emergency-model]]></Name>
 	<EngineVersion>6</EngineVersion>
 	<JavaPackageName><![CDATA[preh_model]]></JavaPackageName>
 	<ModelTimeUnit><![CDATA[Second]]></ModelTimeUnit>
@@ -1487,12 +1487,12 @@ if(isWeatherSafeForFlight == false) {
 					<PresentationId>1776926714891</PresentationId>
 					<ActiveObjectClass>
 						<PackageName><![CDATA[preh_model]]></PackageName>
-						<ClassName><![CDATA[CEU]]></ClassName>
+						<ClassName><![CDATA[CentralEmergencyUnit]]></ClassName>
 					</ActiveObjectClass>
 					<GenericParameterSubstitute>
 						<GenericParameterSubstituteReference>
 							<PackageName><![CDATA[preh_model]]></PackageName>
-							<ClassName><![CDATA[CEU]]></ClassName>
+							<ClassName><![CDATA[CentralEmergencyUnit]]></ClassName>
 							<ItemName><![CDATA[1776926640661]]></ItemName>
 						</GenericParameterSubstituteReference>
 					</GenericParameterSubstitute>
@@ -4755,8 +4755,8 @@ if(isWeatherSafeForFlight == false) {
 					<ScaleType>AUTOMATICALLY_CALCULATED</ScaleType>
 					<GISScaleForRealEmbeddedObjectPresentationSize>1000</GISScaleForRealEmbeddedObjectPresentationSize>
 					<GISScaleForFixedEmbeddedObjectPresentationSize>1000000000</GISScaleForFixedEmbeddedObjectPresentationSize>
-					<Latitude>44.18075016837766</Latitude>
-					<Longitude>12.349362253721766</Longitude>
+					<Latitude>44.043555896939445</Latitude>
+					<Longitude>16.133707570440436</Longitude>
 				</EmbeddedObjectPresentation>
 				<EmbeddedObjectPresentation>
 					<Id>1778086004307</Id>
@@ -8259,7 +8259,7 @@ this.sendPatientStateUpdate();]]></Body>
 						</ColorMapping>
 					</ColorTable>
 					<AutoScale>true</AutoScale>
-					<Scale>0.14</Scale>
+					<Scale>0.01</Scale>
 					<Rotation>0.0</Rotation>
 					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
 					<SelectedAnimationPose></SelectedAnimationPose>
@@ -8276,7 +8276,7 @@ this.sendPatientStateUpdate();]]></Body>
 		<!--   =========   Active Object Class   ========  -->
 		<ActiveObjectClass>
 			<Id>1776926640656</Id>
-			<Name><![CDATA[CEU]]></Name>
+			<Name><![CDATA[CentralEmergencyUnit]]></Name>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1776926640661</Id>

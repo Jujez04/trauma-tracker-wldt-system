@@ -12,15 +12,15 @@ services:
   preh-wldt-system:
     build:
       context: ./preh-wldt-system
-    container_name: preh-wldt-system
+    container_name: emergency-wldt-subsystem
     environment:
       - MQTT_BROKER_URL=tcp://mosquitto:1883
     depends_on:
       - mosquitto
     restart: unless-stopped
     networks:
-      - preh-network
+      - emergency-network
 
 networks:
-  preh-network:
+  emergency-network:
     driver: bridge
