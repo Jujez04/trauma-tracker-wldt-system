@@ -2,7 +2,7 @@ package it.ausl.emergency.adapter.physical;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import it.ausl.emergency.adapter.configuration.MedCarAdapterConfiguration;
-import it.ausl.emergency.model.payload.MedCarTelemetryPayload;
+import it.ausl.emergency.payload.MedCarTelemetryPayload;
 import it.ausl.emergency.utils.MedCarKeywords;
 import it.wldt.adapter.physical.ConfigurablePhysicalAdapter;
 import it.wldt.adapter.physical.PhysicalAssetDescription;

@@ -4,7 +4,7 @@ package it.ausl.emergency.utils;
  * Chiavi utilizzate per descrivere il Physical Asset del Paziente (proprietà ed
  * eventi) e per
  * mappare in modo coerente i campi di
- * {@link it.ausl.emergency.model.payload.PatientTelemetryPayload}
+ * {@link it.ausl.emergency.payload.PatientTelemetryPayload}
  * sulle proprietà del Digital Twin State.
  *
  * Gli eventi ricalcano i Domain Events individuati nell'analisi DDD della tesi

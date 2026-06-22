@@ -2,7 +2,7 @@ package it.ausl.emergency.adapter.physical;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import it.ausl.emergency.adapter.configuration.AmbulanceAdapterConfiguration;
-import it.ausl.emergency.model.payload.AmbulanceTelemetryPayload;
+import it.ausl.emergency.payload.AmbulanceTelemetryPayload;
 import it.ausl.emergency.utils.AmbulanceKeywords;
 import it.wldt.adapter.physical.ConfigurablePhysicalAdapter;
 import it.wldt.adapter.physical.PhysicalAssetDescription;
@@ -107,11 +107,6 @@ public class AmbulancePhysicalAdapter extends ConfigurablePhysicalAdapter<Ambula
                         System.out.println(
                                         "[AmbulancePhysicalAdapter] -> COMMAND RECEIVED: Rerouting vehicle fleet destination to: "
                                                         + targetHospitalId);
-
-                        // Here you will hook your external MQTT publisher thread back to AnyLogic:
-                        // String topic = "ces/ambulance/" + this.getId() + "/action/redirect";
-                        // String payload = "{\"targetHospitalId\":\"" + targetHospitalId + "\"}";
-                        // mqttClient.sendMqttMessage(topic, payload);
                 }
         }
 

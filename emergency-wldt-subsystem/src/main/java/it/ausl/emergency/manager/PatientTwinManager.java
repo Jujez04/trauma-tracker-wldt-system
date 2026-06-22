@@ -1,6 +1,6 @@
 package it.ausl.emergency.manager;
 
-import it.ausl.emergency.model.payload.PatientTelemetryPayload;
+import it.ausl.emergency.payload.PatientTelemetryPayload;
 import it.ausl.emergency.shadowing.PatientShadowingFunction;
 import it.ausl.emergency.twin.PatientDigitalTwin;
 import it.ausl.emergency.utils.PatientKeywords;

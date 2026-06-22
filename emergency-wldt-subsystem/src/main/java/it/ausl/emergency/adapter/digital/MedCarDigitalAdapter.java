@@ -1,7 +1,7 @@
 package it.ausl.emergency.adapter.digital;
 
 import it.ausl.emergency.adapter.configuration.MedCarAdapterConfiguration;
-import it.ausl.emergency.model.payload.MedCarTelemetryPayload;
+import it.ausl.emergency.payload.MedCarTelemetryPayload;
 import it.ausl.emergency.utils.MedCarKeywords;
 import it.wldt.adapter.digital.DigitalAdapter;
 import it.wldt.core.state.*;

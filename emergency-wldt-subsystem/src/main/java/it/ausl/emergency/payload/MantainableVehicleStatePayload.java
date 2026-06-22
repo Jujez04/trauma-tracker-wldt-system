@@ -1,4 +1,4 @@
-package it.ausl.emergency.model.payload;
+package it.ausl.emergency.payload;
 
 public class MantainableVehicleStatePayload {
     

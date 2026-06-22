@@ -1,7 +1,7 @@
 package it.ausl.emergency.adapter.digital;
 
 import it.ausl.emergency.adapter.configuration.MedHelicopterAdapterConfiguration;
-import it.ausl.emergency.model.payload.MedHelicopterTelemetryPayload;
+import it.ausl.emergency.payload.MedHelicopterTelemetryPayload;
 import it.ausl.emergency.utils.MedHelicopterKeywords;
 import it.wldt.adapter.digital.DigitalAdapter;
 import it.wldt.core.state.*;

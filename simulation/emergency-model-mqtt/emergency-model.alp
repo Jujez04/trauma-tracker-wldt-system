@@ -188,7 +188,10 @@ int helId = 1;
 for(MedHelicopter h: medHelicopters) {
 	h.agentId = String.format("HEL-%02d", helId++);
 }
-
+int hospitalId = 1;
+for(Hospital h: hospitalsCollection) {
+	h.agentId = String.format("HOS-%02d", hospitalId++);
+}
 try {
 	mqttClient = new MqttClient("tcp://localhost:1883", "Simulation");
 	mqttClient.connect();
@@ -250,6 +253,9 @@ try {
     for (MedHelicopter h : medHelicopters) {
         sendMqttMessage("ces/registry",
             "{\"action\":\"CREATED\",\"type\":\"medhelicopter\",\"id\":\"" + h.agentId + "\"}");
+    }
+    for (Hospital h : hospitalsCollection) {
+    	sendMqttMessage("ces/registry/hospital", "{\"action\":\"CREATED\",\"type\":hospital\",\"id\":\"" + h.agentId + "\",\"assistanceLevel:\"" + h.assistanceLevel + "\"}");
     }
 } catch(Exception e) {
 	traceln("MQTT client connection error: " + e.getMessage());
@@ -5147,16 +5153,7 @@ this.tripDistance = 0;]]></EntryAction>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="130" Height="30">
-						<EntryAction><![CDATA[traceln("In Operative Zone");
-main.sendMqttMessage(
-    "preh/ambulance/" + agentId + "/state",
-    "{\"state\":\"MovingToPatient\""
-    + ",\"lat\":" + getLatitude()
-    + ",\"lon\":" + getLongitude()
-    + ",\"patientId\":\"" + targetPatient.agentId + "\""
-    + ",\"severity\":\"" + targetPatient.severityCode + "\"}"
-);
-this.setSpeed(110, KPH);
+						<EntryAction><![CDATA[this.setSpeed(110, KPH);
 tripDistance += distanceTo(targetPatient);
 moveTo(targetPatient);
 sendStatus();]]></EntryAction>
@@ -8162,7 +8159,7 @@ sendStatus();]]></Action>
 					<ShowLabel>true</ShowLabel>
 					<Body><![CDATA[String topic = "ces/hospital/" + agentId + "/state";
 String payload = "{"
-    + "\"assistanceLevel\":\"" + assistanceLevel + "\","
+    + "\"assistanceLevel\":" + assistanceLevel + "\","
     + "\"patientAssisted\":" + patientAssisted + ","
     + "\"timestamp\":" + time()
     + "}";

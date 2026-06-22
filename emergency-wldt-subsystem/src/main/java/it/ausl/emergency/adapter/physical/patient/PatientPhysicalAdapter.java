@@ -3,7 +3,7 @@ package it.ausl.emergency.adapter.physical.patient;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import it.ausl.emergency.adapter.configuration.PatientAdapterConfiguration;
-import it.ausl.emergency.model.payload.PatientTelemetryPayload;
+import it.ausl.emergency.payload.PatientTelemetryPayload;
 import it.ausl.emergency.utils.PatientKeywords;
 import it.wldt.adapter.physical.ConfigurablePhysicalAdapter;
 import it.wldt.adapter.physical.PhysicalAssetDescription;

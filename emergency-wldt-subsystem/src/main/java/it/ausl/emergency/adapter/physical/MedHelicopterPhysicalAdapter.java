@@ -2,7 +2,7 @@ package it.ausl.emergency.adapter.physical;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import it.ausl.emergency.adapter.configuration.MedHelicopterAdapterConfiguration;
-import it.ausl.emergency.model.payload.MedHelicopterTelemetryPayload;
+import it.ausl.emergency.payload.MedHelicopterTelemetryPayload;
 import it.ausl.emergency.utils.MedHelicopterKeywords;
 import it.wldt.adapter.physical.ConfigurablePhysicalAdapter;
 import it.wldt.adapter.physical.PhysicalAssetDescription;

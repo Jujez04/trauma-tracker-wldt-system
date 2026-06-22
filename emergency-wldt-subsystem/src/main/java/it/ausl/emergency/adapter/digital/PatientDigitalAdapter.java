@@ -1,7 +1,7 @@
 package it.ausl.emergency.adapter.digital;
 
 import it.ausl.emergency.adapter.configuration.PatientAdapterConfiguration;
-import it.ausl.emergency.model.payload.PatientTelemetryPayload;
+import it.ausl.emergency.payload.PatientTelemetryPayload;
 import it.ausl.emergency.utils.PatientKeywords;
 import it.wldt.adapter.digital.DigitalAdapter;
 import it.wldt.core.state.*;

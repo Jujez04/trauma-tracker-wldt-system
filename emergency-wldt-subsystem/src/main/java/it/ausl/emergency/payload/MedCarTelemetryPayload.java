@@ -1,4 +1,4 @@
-package it.ausl.emergency.model.payload;
+package it.ausl.emergency.payload;
 
 /**
  * topic MQTT "ces/medcar/{agentId}/state".

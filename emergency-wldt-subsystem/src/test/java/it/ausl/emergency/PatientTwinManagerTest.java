@@ -2,7 +2,7 @@ package it.ausl.emergency;
 
 import it.ausl.emergency.adapter.physical.patient.PatientMqttIngestionAdapter;
 import it.ausl.emergency.manager.PatientTwinManager;
-import it.ausl.emergency.model.payload.PatientTelemetryPayload;
+import it.ausl.emergency.payload.PatientTelemetryPayload;
 import it.ausl.emergency.twin.PatientDigitalTwin;
 import it.ausl.emergency.utils.PatientKeywords;
 import it.wldt.core.engine.DigitalTwinEngine;

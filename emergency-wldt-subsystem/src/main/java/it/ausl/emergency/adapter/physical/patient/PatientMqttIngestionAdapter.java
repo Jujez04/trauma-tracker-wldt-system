@@ -2,7 +2,8 @@ package it.ausl.emergency.adapter.physical.patient;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import it.ausl.emergency.manager.PatientTwinManager;
-import it.ausl.emergency.model.payload.PatientTelemetryPayload;
+import it.ausl.emergency.payload.PatientTelemetryPayload;
+
 import org.eclipse.paho.client.mqttv3.*;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 

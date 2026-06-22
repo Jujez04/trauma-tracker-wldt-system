@@ -1,7 +1,7 @@
 package it.ausl.emergency;
 
 import it.ausl.emergency.adapter.physical.MedHelicopterPhysicalAdapter;
-import it.ausl.emergency.model.payload.MedHelicopterTelemetryPayload;
+import it.ausl.emergency.payload.MedHelicopterTelemetryPayload;
 import it.ausl.emergency.shadowing.MedHelicopterShadowingFunction;
 import it.ausl.emergency.twin.MedHelicopterDigitalTwin;
 import it.ausl.emergency.utils.MedHelicopterKeywords;

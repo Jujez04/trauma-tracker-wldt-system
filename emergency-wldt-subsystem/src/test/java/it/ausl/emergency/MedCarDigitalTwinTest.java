@@ -1,7 +1,7 @@
 package it.ausl.emergency;
 
 import it.ausl.emergency.adapter.physical.MedCarPhysicalAdapter;
-import it.ausl.emergency.model.payload.MedCarTelemetryPayload;
+import it.ausl.emergency.payload.MedCarTelemetryPayload;
 import it.ausl.emergency.shadowing.MedCarShadowingFunction;
 import it.ausl.emergency.twin.MedCarDigitalTwin;
 import it.ausl.emergency.utils.MedCarKeywords;
